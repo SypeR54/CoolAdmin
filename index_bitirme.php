@@ -609,14 +609,14 @@ echo("<!-- DEBUG: Ben bağlıyım :) -->")
                         </div>
                         <div class="row">
                             <div class="col-lg-9">
-                                <h2 class="title-1 m-b-25">Katılanlar</h2>
+                                <h2 class="title-1 m-b-25">Kayıtlı Kullanıcılar</h2>
                                 <div class="table-responsive table--no-card m-b-40">
                                     <table class="table table-borderless table-striped table-earning">
                                         <thead>
                                             <tr>
                                                 <th>#</th>
-                                                <th class="text-right">İsim</th>
-                                                <th class="text-right">Katılımlar</th>
+                                                <th class="text-left">Kullanıcı Adı</th>
+                                                <th class="text-left">RFID UUID</th>
                                             </tr>
                                         </thead>
                                         <tbody>
