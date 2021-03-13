@@ -609,11 +609,11 @@ echo("<!-- DEBUG: Ben bağlıyım :) -->")
                         </div>
                         <div class="row">
                             <div class="col-lg-9">
-                                <h2 class="title-1 m-b-25">Kayıtlı Kullanıcılar</h2>
+                                <h2 class="title-1 m-b-20">Kayıtlı Kullanıcılar</h2>
                                     <button type="button" class="btn btn-secondary">
                                         <i class="fa fa-pencil-square-o"></i>&nbsp; Yeni Kayıt Ekle
                                     </button>
-                                <div class="table-responsive table--no-card m-b-40">
+                                <div class="table-responsive table--no-card m-b-30">
                                     <table class="table table-borderless table-striped table-earning">
                                         <thead>
                                             <tr>
@@ -627,7 +627,7 @@ echo("<!-- DEBUG: Ben bağlıyım :) -->")
                                             //Loop through and list all the information of each user including their RFID UID
                                             foreach($users as $user) {
                                                 echo '<tr>';
-                                                echo '<td scope="row">' . $user['id'] . '</td>';
+                                                echo '<td scope="row" class="text-left">' . $user['id'] . '</td>';
                                                 echo '<td>' . $user['name'] . '</td>';
                                                 echo '<td>' . $user['rfid_uid'] . '</td>';
                                                 echo '</tr>';
