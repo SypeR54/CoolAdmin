@@ -615,8 +615,8 @@ echo("<!-- DEBUG: Ben bağlıyım :) -->")
                                         <i class="zmdi zmdi-plus"></i>add item</button>
                                 </div -->
                                 <div class="overview-wrap">
-                                    <h2 class="title-1 m-b-20">Kayıtlı Kullanıcılar</h2>
-                                    <button type="button" class="btn btn-secondary btn-sm">
+                                    <h2 class="title-1 m-b-10">Kayıtlı Kullanıcılar</h2>
+                                    <button type="button" class="btn btn-secondary btn-sm m-b-10">
                                         <i class="fa fa-pencil-square-o"></i>&nbsp; Yeni Kullanıcı Ekle</button>
                                 </div>
                                 <div class="table-responsive table--no-card m-b-30">
