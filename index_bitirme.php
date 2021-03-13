@@ -9,7 +9,7 @@ $users = $database->select("users", [
     'name',
     'rfid_uid'
 ]);
-echo("DEBUG: Ben bağlıyım :)")
+echo("<!-- DEBUG: Ben bağlıyım :) -->")
 ?>
 <!DOCTYPE html>
 <html lang="tr">
@@ -609,28 +609,27 @@ echo("DEBUG: Ben bağlıyım :)")
                         </div>
                         <div class="row">
                             <div class="col-lg-9">
-                                <h2 class="title-1 m-b-25">Earnings By Items</h2>
+                                <h2 class="title-1 m-b-25">Katılanlar</h2>
                                 <div class="table-responsive table--no-card m-b-40">
                                     <table class="table table-borderless table-striped table-earning">
                                         <thead>
                                             <tr>
-                                                <th>date</th>
-                                                <th>order ID</th>
-                                                <th>name</th>
-                                                <th class="text-right">price</th>
-                                                <th class="text-right">quantity</th>
-                                                <th class="text-right">total</th>
+                                                <th>#</th>
+                                                <th class="text-right">İsim</th>
+                                                <th class="text-right">Katılımlar</th>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr>
-                                                <td>Deneme Tarih</td>
-                                                <td>Deneme ID</td>
-                                                <td>Deneme İsim</td>
-                                                <td>Deneme Fiyat</td>
-                                                <td>Deneme Adet</td>
-                                                <td>Deneme Toplam</td>
-                                            </tr>
+                                            <?php
+                                            //Loop through and list all the information of each user including their RFID UID
+                                            foreach($users as $user) {
+                                                echo '<tr>';
+                                                echo '<td scope="row">' . $user['id'] . '</td>';
+                                                echo '<td>' . $user['name'] . '</td>';
+                                                echo '<td>' . $user['rfid_uid'] . '</td>';
+                                                echo '</tr>';
+                                            }
+                                            ?>
                                         </tbody>
                                     </table>
                                 </div>
