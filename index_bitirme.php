@@ -610,6 +610,9 @@ echo("<!-- DEBUG: Ben bağlıyım :) -->")
                         <div class="row">
                             <div class="col-lg-9">
                                 <h2 class="title-1 m-b-25">Kayıtlı Kullanıcılar</h2>
+                                    <button type="button" class="btn btn-secondary">
+                                        <i class="fa fa-pencil-square-o"></i>&nbsp; Yeni Kayıt Ekle
+                                    </button>
                                 <div class="table-responsive table--no-card m-b-40">
                                     <table class="table table-borderless table-striped table-earning">
                                         <thead>
