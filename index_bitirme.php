@@ -609,10 +609,16 @@ echo("<!-- DEBUG: Ben bağlıyım :) -->")
                         </div>
                         <div class="row">
                             <div class="col-lg-9">
-                                <h2 class="title-1 m-b-20">Kayıtlı Kullanıcılar</h2>
+                                <!-- div class="overview-wrap">
+                                    <h2 class="title-1">overview</h2>
+                                    <button class="au-btn au-btn-icon au-btn--blue">
+                                        <i class="zmdi zmdi-plus"></i>add item</button>
+                                </div -->
+                                <div class="kayitli-kullanici-baslik">
+                                    <h2 class="title-1 m-b-10">Kayıtlı Kullanıcılar</h2>
                                     <button type="button" class="btn btn-secondary">
-                                        <i class="fa fa-pencil-square-o"></i>&nbsp; Yeni Kayıt Ekle
-                                    </button>
+                                        <i class="fa fa-pencil-square-o"></i>&nbsp; Yeni Kayıt Ekle</button>
+                                </div>
                                 <div class="table-responsive table--no-card m-b-30">
                                     <table class="table table-borderless table-striped table-earning">
                                         <thead>
