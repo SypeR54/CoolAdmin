@@ -1,5 +1,4 @@
-<!--
-< ?php
+<?php
 // Please edit your "gerekli_template.php" for database connection
 // After your modifications, don't forget to rename as "gerekli.php"
 require 'gerekli.php';
@@ -12,7 +11,6 @@ $users = $database->select("users", [
 ]);
 
 ?>
--->
 <!DOCTYPE html>
 <html lang="tr">
 
