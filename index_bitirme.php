@@ -4,11 +4,7 @@
 require 'gerekli.php';
 
 //Grab all the users from our database
-$users = $database->select("users", [
-    'id',
-    'name',
-    'rfid_uid'
-]);
+$users = $database->select("users", ['id', 'name', 'rfid_uid']);
 echo("<!-- DEBUG: Ben bağlıyım :) -->")
 ?>
 <!DOCTYPE html>
@@ -86,7 +82,7 @@ echo("<!-- DEBUG: Ben bağlıyım :) -->")
                                     <a href="index4.html">Kontrol Paneli 4</a>
                                 </li>
                                 <li>
-                                    <a href="index_bitirme.html">Bitirme</a>
+                                    <a href="index_bitirme.php">Bitirme</a>
                                 </li>
                             </ul>
                         </li>
@@ -197,7 +193,7 @@ echo("<!-- DEBUG: Ben bağlıyım :) -->")
                                     <a href="index4.html">Kontrol Paneli 4</a>
                                 </li>
                                 <li>
-                                    <a href="index_bitirme.html">Bitirme</a>
+                                    <a href="index_bitirme.php">Bitirme</a>
                                 </li>
                             </ul>
                         </li>
@@ -299,10 +295,10 @@ echo("<!-- DEBUG: Ben bağlıyım :) -->")
                                 <div class="noti-wrap">
                                     <div class="noti__item js-item-menu">
                                         <i class="zmdi zmdi-comment-more"></i>
-                                        <span class="quantity">1</span>
+                                        <span class="quantity">2</span>
                                         <div class="mess-dropdown js-dropdown">
                                             <div class="mess__title">
-                                                <p>You have 2 news message</p>
+                                                <p>2 okunmamış mesajınız mevcut</p>
                                             </div>
                                             <div class="mess__item">
                                                 <div class="image img-cir img-40">
@@ -331,10 +327,10 @@ echo("<!-- DEBUG: Ben bağlıyım :) -->")
                                     </div>
                                     <div class="noti__item js-item-menu">
                                         <i class="zmdi zmdi-email"></i>
-                                        <span class="quantity">1</span>
+                                        <span class="quantity">5</span>
                                         <div class="email-dropdown js-dropdown">
                                             <div class="email__title">
-                                                <p>You have 3 New Emails</p>
+                                                <p>3 yeni, 5 okunmamış epostanız mevcut.</p>
                                             </div>
                                             <div class="email__item">
                                                 <div class="image img-cir img-40">
@@ -364,7 +360,7 @@ echo("<!-- DEBUG: Ben bağlıyım :) -->")
                                                 </div>
                                             </div>
                                             <div class="email__footer">
-                                                <a href="#">See all emails</a>
+                                                <a href="#">Tüm epostaları görüntüle</a>
                                             </div>
                                         </div>
                                     </div>
@@ -373,7 +369,7 @@ echo("<!-- DEBUG: Ben bağlıyım :) -->")
                                         <span class="quantity">3</span>
                                         <div class="notifi-dropdown js-dropdown">
                                             <div class="notifi__title">
-                                                <p>You have 3 Notifications</p>
+                                                <p>3 bildiriminiz mevcut.</p>
                                             </div>
                                             <div class="notifi__item">
                                                 <div class="bg-c1 img-cir img-40">
@@ -403,7 +399,7 @@ echo("<!-- DEBUG: Ben bağlıyım :) -->")
                                                 </div>
                                             </div>
                                             <div class="notifi__footer">
-                                                <a href="#">All notifications</a>
+                                                <a href="#">Tüm bildirimler</a>
                                             </div>
                                         </div>
                                     </div>
@@ -433,20 +429,20 @@ echo("<!-- DEBUG: Ben bağlıyım :) -->")
                                             <div class="account-dropdown__body">
                                                 <div class="account-dropdown__item">
                                                     <a href="#">
-                                                        <i class="zmdi zmdi-account"></i>Account</a>
+                                                        <i class="zmdi zmdi-account"></i>Hesap</a>
                                                 </div>
                                                 <div class="account-dropdown__item">
                                                     <a href="#">
-                                                        <i class="zmdi zmdi-settings"></i>Setting</a>
+                                                        <i class="zmdi zmdi-settings"></i>Ayarlar</a>
                                                 </div>
                                                 <div class="account-dropdown__item">
                                                     <a href="#">
-                                                        <i class="zmdi zmdi-money-box"></i>Billing</a>
+                                                        <i class="zmdi zmdi-money-box"></i>Ödeme</a>
                                                 </div>
                                             </div>
                                             <div class="account-dropdown__footer">
                                                 <a href="#">
-                                                    <i class="zmdi zmdi-power"></i>Logout</a>
+                                                    <i class="zmdi zmdi-power"></i>Çıkış</a>
                                             </div>
                                         </div>
                                     </div>
@@ -684,6 +680,44 @@ echo("<!-- DEBUG: Ben bağlıyım :) -->")
                                                     </tr>
                                                 </tbody>
                                             </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div>
+                                <div class="col-lg-6">
+                                    <div class="au-card recent-report">
+                                        <div class="au-card-inner">
+                                            <h3 class="title-2">RFID Test Tablosu</h3>
+                                            <div class="chart-info">
+                                                <div class="chart-info__left">
+                                                    <div class="chart-note">
+                                                        <span class="dot dot--blue"></span>
+                                                        <span>products</span>
+                                                    </div>
+                                                    <div class="chart-note mr-0">
+                                                        <span class="dot dot--green"></span>
+                                                        <span>services</span>
+                                                    </div>
+                                                </div>
+                                                <div class="chart-info__right">
+                                                    <div class="chart-statis">
+                                                        <span class="index incre">
+                                                            <i class="zmdi zmdi-long-arrow-up"></i>25%</span>
+                                                        <span class="label">products</span>
+                                                    </div>
+                                                    <div class="chart-statis mr-0">
+                                                        <span class="index decre">
+                                                            <i class="zmdi zmdi-long-arrow-down"></i>10%</span>
+                                                        <span class="label">services</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="recent-report__chart">
+                                                <canvas id="recent-rep-chart"></canvas>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
