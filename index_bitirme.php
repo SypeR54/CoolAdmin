@@ -570,9 +570,9 @@ echo("<!-- DEBUG: Ben bağlıyım :) -->")
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="recent-report__chart">
+                                        <!-- div class="recent-report__chart">
                                             <canvas id="recent-rep-chart"></canvas>
-                                        </div>
+                                        </div-->
                                     </div>
                                 </div>
                             </div>
